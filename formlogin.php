@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <form action="login.php" method="post">
+        <form action="login.php" method="post" onsubmit="return checker(inputan)">
             <table>
                 <tr>
                     <td>Username </td>
@@ -22,5 +22,30 @@
                 </tr>
             </table>
         </form>
+        
+        <!-- <script>
+            function checker(inputan)
+            {
+                let laporan;
+                if(inputan.username.value =="")
+                {
+                    laporan += "Username tidak boleh kosong";
+                }
+                if(inputan.password.value == "")
+                {
+                    laporan += "Password tidak boleh kosong";
+                }
+                if(laporan =="")
+                {
+                    return true;
+                }
+                else
+                {
+                    alert(laporan);
+                    return false;
+                }
+            }
+        </script> -->
+
     </body>
 </html>
